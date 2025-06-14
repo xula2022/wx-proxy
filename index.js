@@ -8,7 +8,7 @@ app.use(cors());
 
 // 代理所有请求到 x.ai
 app.use('/', createProxyMiddleware({
-  target: 'https://mp.weixin.qq.com',
+  target: 'https://www.reddit.com',
   changeOrigin: true,
   onProxyReq: (proxyReq, req) => {
     // 转发原始 Authorization 头
